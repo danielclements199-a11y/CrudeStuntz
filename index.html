@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrudeStuntz 🔥</title>
+<style>
+body {
+  margin:0; padding:0;
+  font-family: Arial, sans-serif;
+  background:#111;
+  color:#fff;
+  text-align:center;
+}
+header {
+  background: linear-gradient(90deg, #ff0000, #ff4500);
+  padding: 20px;
+  animation: gradientShift 5s infinite alternate;
+}
+@keyframes gradientShift {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+h1 { font-size:2.5rem; margin:0; text-shadow:0 0 10px #ff4500; }
+
+.video-container { 
+  max-width: 800px; margin: 30px auto; border-radius:12px; overflow:hidden; 
+  box-shadow:0 0 20px #ff4500; transition: box-shadow 0.3s, transform 0.3s;
+}
+.video-container:hover {
+  box-shadow:0 0 35px #ff4500,0 0 50px #ff0000;
+  transform: scale(1.02);
+}
+iframe { width:100%; height:450px; border:none; border-radius:12px; }
+
+.subscribe-btn {
+  display:inline-block; margin:10px auto; padding:12px 25px; 
+  font-size:1.2rem; background:#ff0000; color:#fff; text-decoration:none; 
+  border-radius:50px; box-shadow:0 0 10px #ff4500; transition: transform 0.2s, box-shadow 0.3s;
+}
+.subscribe-btn:hover { 
+  transform: scale(1.1); 
+  box-shadow:0 0 20px #ff4500,0 0 30px #ff0000; 
+}
+
+.comments { 
+  margin:30px auto; 
+  max-width:800px; 
+  border-radius:12px; 
+  overflow:hidden; 
+  box-shadow:0 0 15px #ff4500; 
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🔥 CrudeStuntz Channel 🔥</h1>
+</header>
+
+<a href="https://www.youtube.com/@CrudeStuntz" target="_blank" class="subscribe-btn">Subscribe 🔔</a>
+
+<div class="video-container">
+  <!-- Embedded latest YouTube video -->
+  <iframe src="https://www.youtube.com/embed/PTOunWwsZkI" allowfullscreen></iframe>
+</div>
+
+<div class="comments">
+  <!-- Optional: live chat (static embed, replace domain if needed) -->
+  <iframe src="https://www.youtube.com/live_chat?v=PTOunWwsZkI&embed_domain=localhost" height="400"></iframe>
+</div>
+
+</body>
+</html>
